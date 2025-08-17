@@ -1,0 +1,11 @@
+{
+  "name": "Parrot Cloud Lab",
+  "build": {
+    "dockerfile": "../Dockerfile"
+  },
+  "runArgs": [
+    "--cap-add=NET_ADMIN",
+    "--device=/dev/net/tun"
+  ],
+  "forwardPorts": [6080]
+}
